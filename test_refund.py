@@ -23,5 +23,5 @@ def perform_refund(private_key) :
         assert resp_data['success'] == True, f'{token} {resp_data["refund"]["status"]}'
     else:
         error = resp_data['errors']
-        assert resp_data['success'] == True, f'Something gone wrong: {resp.status_code} : {error}'
+        assert resp_data['success'] == True, f'Something gone  wrong: {resp.status_code} : {error}'
 
