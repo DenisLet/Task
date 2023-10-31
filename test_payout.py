@@ -29,10 +29,10 @@ def perform_payout(private_key, amount, currency):
     }
 
     resp = requests.post(API_URL_PAYOUT, json=payload, headers=headers)
-
+    resp_data = json.loads(resp.text)
     if resp.status_code == 200:
-        resp_data = json.loads(resp.text)
         token = resp_data['payout']['token']
+        print(token)
         assert resp_data['success'] == True, f'{token} {resp_data["payout"]["status"]}'
     else:
         assert resp_data['success'] == True, f'Something gone wrong: {resp.status_code} : {resp.text}'
