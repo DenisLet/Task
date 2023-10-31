@@ -29,7 +29,7 @@ def perform_payment(private_key, currency, amount):
 
     resp_payload = json.loads(response.text)
 
-    if response.status_code == 200:
+    if response.status_code == 200 :
         token = resp_payload['token']
         current_status = resp_payload["payment"]["status"]
         success = resp_payload['success']
