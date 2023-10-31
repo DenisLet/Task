@@ -14,7 +14,7 @@ class TestConfig:
         100
     )
 
-    currencies = ['EUR', 'USD', 'RUB']
+    currencies = ['EUR', 'USD', 'RUB', 'BTC', 'FAIL_CASH']
     success_amounts = [1, 100, 987654321]
     fail_amounts = [-1, 0.01, 77**55]
 
