@@ -2,7 +2,7 @@
 import os
 
 class TestConfig:
-    # private_key = 'baa2920a5b90e8a445d4'
+    # private_key = ''
     api_urls = {
         'payment': 'https://business.reactivepay.com/api/v1/payments',
         'payout': 'https://business.reactivepay.com/api/v1/payouts',
