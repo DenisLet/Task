@@ -1,0 +1,52 @@
+{
+    "request": {
+        "url": "https://business.reactivepay.com/api/v1/balance?currency=EUR",
+        "method": "GET",
+        "headers": {
+            "User-Agent": "python-requests/2.31.0",
+            "Accept-Encoding": "gzip, deflate",
+            "Accept": "*/*",
+            "Connection": "keep-alive",
+            "Content-Type": "application/json",
+            "Authorization": "Bearer baa2920a5b90e8a445d4"
+        },
+        "body": null
+    },
+    "response": {
+        "status_code": 200,
+        "headers": {
+            "Server": "nginx",
+            "Date": "Tue, 31 Oct 2023 13:28:02 GMT",
+            "Content-Type": "application/json; charset=utf-8",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-XSS-Protection": "1; mode=block",
+            "X-Content-Type-Options": "nosniff",
+            "X-Download-Options": "noopen",
+            "X-Permitted-Cross-Domain-Policies": "none",
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "ETag": "W/\"c16578e0d0c9e4af28e68eaf0a6a414d\"",
+            "Cache-Control": "max-age=0, private, must-revalidate",
+            "X-Request-Id": "89724518-dd22-4293-96ac-5b56e8a09a3b",
+            "X-Runtime": "0.094351",
+            "Vary": "Origin, Origin, Accept-Encoding",
+            "x-requestId": "8214-1698758882.430-37.122.190.133-258",
+            "Access-Control-Allow-Credentials": "true",
+            "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+            "Access-Control-Expose-Headers": "x-count, x-page, x-commentcounts, x-votecounts, x-require",
+            "Access-Control-Allow-Methods": "DELETE, GET, HEAD, OPTIONS, POST, PUT",
+            "Access-Control-Max-Age": "86400"
+        },
+        "body": {
+            "success": true,
+            "result": 0,
+            "status": 200,
+            "wallet": {
+                "available": 0.0,
+                "hold": 0.0,
+                "currency": "EUR"
+            }
+        }
+    }
+}

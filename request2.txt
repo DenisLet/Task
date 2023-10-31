@@ -1,0 +1,117 @@
+{
+    "request": {
+        "method": "POST",
+        "path": "/api/v1/payments",
+        "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer baa2920a5b90e8a445d4"
+        },
+        "body": {
+            "orderNumber": "order_number_2"
+        }
+    },
+    "response": {
+        "status": 403,
+        "reason": "Forbidden",
+        "headers": [
+            [
+                "Server",
+                "nginx"
+            ],
+            [
+                "Date",
+                "Tue, 31 Oct 2023 13:27:57 GMT"
+            ],
+            [
+                "Content-Type",
+                "application/json; charset=utf-8"
+            ],
+            [
+                "Transfer-Encoding",
+                "chunked"
+            ],
+            [
+                "Connection",
+                "keep-alive"
+            ],
+            [
+                "X-Frame-Options",
+                "SAMEORIGIN"
+            ],
+            [
+                "X-XSS-Protection",
+                "1; mode=block"
+            ],
+            [
+                "X-Content-Type-Options",
+                "nosniff"
+            ],
+            [
+                "X-Download-Options",
+                "noopen"
+            ],
+            [
+                "X-Permitted-Cross-Domain-Policies",
+                "none"
+            ],
+            [
+                "Referrer-Policy",
+                "strict-origin-when-cross-origin"
+            ],
+            [
+                "Cache-Control",
+                "no-cache"
+            ],
+            [
+                "X-Request-Id",
+                "e40ce98f-595a-4475-b850-a7bceaca8032"
+            ],
+            [
+                "X-Runtime",
+                "0.006953"
+            ],
+            [
+                "Vary",
+                "Origin"
+            ],
+            [
+                "x-requestId",
+                "8214-1698758877.117-37.122.190.133-189"
+            ],
+            [
+                "Access-Control-Allow-Credentials",
+                "true"
+            ],
+            [
+                "Access-Control-Allow-Headers",
+                "Origin, X-Requested-With, Content-Type, Accept"
+            ],
+            [
+                "Access-Control-Expose-Headers",
+                "x-count, x-page, x-commentcounts, x-votecounts, x-require"
+            ],
+            [
+                "Access-Control-Allow-Methods",
+                "DELETE, GET, HEAD, OPTIONS, POST, PUT"
+            ],
+            [
+                "Access-Control-Max-Age",
+                "86400"
+            ],
+            [
+                "Vary",
+                "Origin, Accept-Encoding"
+            ]
+        ],
+        "body": {
+            "success": false,
+            "result": 1,
+            "status": 403,
+            "errors": [
+                "The property '#/' did not contain a required property of 'product' in schema file:///business/schema/payments_create.json",
+                "The property '#/' did not contain a required property of 'amount' in schema file:///business/schema/payments_create.json",
+                "The property '#/' did not contain a required property of 'currency' in schema file:///business/schema/payments_create.json"
+            ]
+        }
+    }
+}
