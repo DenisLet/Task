@@ -38,4 +38,4 @@ def perform_payment(private_key, currency, amount):
     else:
         current_status = f'{resp_payload["errors"]}'
         logging.error(f'Payment of {amount} in {currency} failed. Error code: {response.status_code}. Status: {current_status}')
-        assert success == True, f'Payment of {amount} in {currency} failed. Error code: {response.status_code}. Status: {current_status}'
+        assert False, f'Payment of {amount} in {currency} failed. Error code: {response.status_code}. Status: {current_status}'
